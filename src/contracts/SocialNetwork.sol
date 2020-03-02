@@ -52,7 +52,7 @@ contract SocialNetwork {
 
 		//Fetch the author of the post
 		address payable _author = _post.author;
-		
+
 		// Pay the author by sending ether.
 		address(_author).transfer(msg.value);
 
@@ -65,6 +65,4 @@ contract SocialNetwork {
 		// Trigger an event
 		emit PostTipped(_id, _post.content, _post.tipAmount, _post.author);
 	}
-
-
 }
