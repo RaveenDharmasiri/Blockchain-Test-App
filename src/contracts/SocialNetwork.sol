@@ -6,7 +6,6 @@ contract SocialNetwork {
 	uint public postCount = 0;
 	mapping(uint => Post) public posts;
 
-
 	struct Post {
 		uint id;
 		string content;
